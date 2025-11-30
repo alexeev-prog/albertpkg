@@ -1,0 +1,23 @@
+[project]
+name = "albertpkg"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Alexeev Bronislav", email = "alexeev.dev@mail.ru" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "aiohttp>=3.13.2",
+    "asyncio>=4.0.0",
+    "click>=8.3.1",
+    "httpx>=0.28.1",
+    "rich>=14.2.0",
+]
+
+[project.scripts]
+albertpkg = "albertpkg:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
